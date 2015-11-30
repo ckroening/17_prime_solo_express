@@ -11,7 +11,6 @@ app.use('/static', express.static(__dirname + '/static'));
 
 app.get('/balance', function(req, res, next){
     res.send(combine.accountBalance());
-    res.send(combine.combine());
 });
 
 var server = app.listen(process.env.PORT || 3000, function() {
