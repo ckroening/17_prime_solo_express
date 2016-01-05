@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var combine = require('./modules/combine');
+var convert = require('./modules/convert');
+var random = require('./modules/random');
 
 app.get('/', function(req, res, next) {
   res.sendFile(__dirname + '/index.html');

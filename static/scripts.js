@@ -6,7 +6,7 @@ $(function() {
       url: '/balance'
     }).done(function(money) {
       $('button').slideDown(450, function() {
-        $(this).html(money + '<br><br> Yay, money! Click to see another amount.');
+        $(this).html(money + '<br>Yay, money! Click to see another amount.</br>');
       });
     });
   }
